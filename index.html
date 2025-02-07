@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Your Name</h1>
+        <p id="subtitle">Film Director & VFX Artist</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Bringing Stories to Life with Visual Effects and Cinematic Excellence</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    </footer>
+    
+    <script>
+        gsap.from("#title", { duration: 1.5, y: -50, opacity: 0, ease: "bounce" });
+        gsap.from("#subtitle", { duration: 1.5, y: 50, opacity: 0, delay: 0.5 });
+        gsap.from("nav ul li", { duration: 1, opacity: 0, y: 30, stagger: 0.3, delay: 1 });
+        gsap.from(".hero h2", { duration: 1.5, opacity: 0, x: -50, delay: 1.5 });
+        gsap.from(".hero p", { duration: 1.5, opacity: 0, x: 50, delay: 1.8 });
+    </script>
+</body>
+</html>
